@@ -23,7 +23,8 @@ sudo bash -c \
 
 
 sudo apt-get update -y && sudo apt-get install -y \
-libindy-crypto=0.4.5 indy-cli=1.15.0~1536-xenial libindy=1.15.0~1536-xenial python3-indy-crypto=0.4.5 python3-pympler=0.5 indy-plenum=1.13.0~dev1021 indy-node=1.13.0~dev1213 
+python3-pympler=0.5 python3-orderedset=2.0 python3-psutil=5.4.3 \
+libindy-crypto=0.4.5 indy-cli=1.15.0~1536-xenial libindy=1.15.0~1536-xenial python3-indy-crypto=0.4.5 indy-plenum=1.13.0~dev1021 indy-node=1.13.0~dev1213 
     
 
 
