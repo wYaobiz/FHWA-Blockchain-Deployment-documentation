@@ -22,11 +22,16 @@ https://medium.com/@taseen.junaid/hyperledger-indy-custom-network-with-indy-node
 ### Nodes:
 `sudo python3 init_indy_node.py --name Node1 --seed 4000F000u00000D0000000g0000Node1`
 
+`sudo python3 init_indy_node.py --name Node2 --seed T00000000u0000I0000v0003000Node2`
+
+`sudo python3 init_indy_node.py --name Node3 --seed 300000A00u000z0000600003000Node3`
+
 ## Single Host Network Development:
 `sudo python3 clear_setup.py --full True --network sandbox`
 
 `sudo bash single_host_generation.sh`
 
+For Node 1:
 `sudo python3 start_indy_node.py Node1 0.0.0.0 9701 0.0.0.0 9702`
 
 For Node 2: 
