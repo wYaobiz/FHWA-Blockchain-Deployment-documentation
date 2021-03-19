@@ -12,9 +12,9 @@ https://medium.com/@taseen.junaid/hyperledger-indy-custom-network-with-indy-node
 ### Trustee 
 `python3 get_did_and_verkey.py --seed T0003000u0I000D000F000g0Trustee1`
 ### Stewards 1, 2, and 3
-`python3 get_did_and_verkey.py --seed 100A000000300000c0000000Steward1
-python3 get_did_and_verkey.py --seed 300600b0D030000000z00000Steward2
-python3 get_did_and_verkey.py --seed v000K00l0000S000000e0000Steward3`
+`python3 get_did_and_verkey.py --seed 100A000000300000c0000000Steward1`
+`python3 get_did_and_verkey.py --seed 300600b0D030000000z00000Steward2`
+`python3 get_did_and_verkey.py --seed v000K00l0000S000000e0000Steward3`
 
 ### Nodes:
 `sudo python3 init_indy_node.py --name Node1 --seed 4000F000u00000D0000000g0000Node1`
