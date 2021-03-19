@@ -23,9 +23,9 @@ https://medium.com/@taseen.junaid/hyperledger-indy-custom-network-with-indy-node
 `sudo python3 init_indy_node.py --name Node1 --seed 4000F000u00000D0000000g0000Node1`
 
 ## Single Host Network Development:
-`sudo python3 clear_setup.py --full True --network sandbox
-sudo bash single_host_generation.sh
-sudo python3 start_indy_node.py Node1 0.0.0.0 9701 0.0.0.0 9702`
+`sudo python3 clear_setup.py --full True --network sandbox`
+`sudo bash single_host_generation.sh`
+`sudo python3 start_indy_node.py Node1 0.0.0.0 9701 0.0.0.0 9702`
 
 For Node 2: 
 `sudo python3 start_indy_node.py Node2 0.0.0.0 9703 0.0.0.0 9704`
@@ -42,32 +42,32 @@ To restart the stopped node:
 
 ## Multi Hosts Network Development
 ### Host 1
-`sudo python3 clear_setup.py --full True --network sandbox
-sudo bash multi_host_host1_generation.sh
-sudo python3 start_indy_node.py Node1 0.0.0.0 9701 0.0.0.0 9702`
+`sudo python3 clear_setup.py --full True --network sandbox`
+`sudo bash multi_host_host1_generation.sh`
+`sudo python3 start_indy_node.py Node1 0.0.0.0 9701 0.0.0.0 9702`
 
 To check node information and to restart stopped node
 `sudo python3 validator_info.py
 sudo bash restart_indy_node.sh`
 
 ### Host 2
-`sudo python3 clear_setup.py --full True --network sandbox
-sudo bash multi_host_host1_generation.sh
-sudo python3 start_indy_node.py Node2 0.0.0.0 9703 0.0.0.0 9704`
+`sudo python3 clear_setup.py --full True --network sandbox`
+`sudo bash multi_host_host1_generation.sh`
+`sudo python3 start_indy_node.py Node2 0.0.0.0 9703 0.0.0.0 9704`
 
 To check node information and to restart stopped node
-`sudo python3 validator_info.py
-sudo bash restart_indy_node.sh`
+`sudo python3 validator_info.py`
+`sudo bash restart_indy_node.sh`
 
 
 ### Host 3
-`sudo python3 clear_setup.py --full True --network sandbox
-sudo bash multi_host_host1_generation.sh
-sudo python3 start_indy_node.py Node3 0.0.0.0 9705 0.0.0.0 9706`
+`sudo python3 clear_setup.py --full True --network sandbox`
+`sudo bash multi_host_host1_generation.sh`
+`sudo python3 start_indy_node.py Node3 0.0.0.0 9705 0.0.0.0 9706`
 
 To check node information and to restart stopped node
-`sudo python3 validator_info.py
-sudo bash restart_indy_node.sh`
+`sudo python3 validator_info.py`
+`sudo bash restart_indy_node.sh`
 
 
 ## Testing with SDK Applications
