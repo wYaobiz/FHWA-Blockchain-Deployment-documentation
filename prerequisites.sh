@@ -28,6 +28,8 @@ libindy-crypto=0.4.5 indy-cli=1.15.0~1536-xenial libindy=1.15.0~1536-xenial pyth
 
 
 sudo pip3 install python3-indy==1.15.0
+sudo pip install indy-plenum==1.13.0.dev1021
+
 
 
 sudo awk \
