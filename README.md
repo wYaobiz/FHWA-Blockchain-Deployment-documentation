@@ -6,6 +6,7 @@ https://medium.com/@taseen.junaid/hyperledger-indy-custom-network-with-indy-node
 
 ## Presetup 
 `git clone https://github.com/wYaobiz/Hyperledger-Indy-Tutorial`
+
 `sudo bash prerequisites.sh`
 
 ## Generating public info using private/secret seed value
