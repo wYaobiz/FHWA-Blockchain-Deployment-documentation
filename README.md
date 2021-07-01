@@ -21,12 +21,20 @@ To formlized the pool, we needs four nodes, which consists of one trustee node a
     - Trustee: An Identity Owner entrusted with specific identity control responsibilities by another Identity Owneror with specific governance responsibilities by a Governance Framework. 
     - Steward: An Organization approved by the Sovrin Foundation to operate a Node. 
 
-Bother trustee and steward can be validator nodes. 
+Both trustee and steward can be validator nodes. 
+
+Seed is a 32 character long value which acts as an actor’s/component’s private information which is not shareable with others for security reasons. By using seed value, we can generate public information and can share those public information via agents or other mediums.
+
+By calling “get_did_and_verkey.py” with 32 character long seed value, different actors can see their DID (Decentralized Identity) and verification keys.
 
 ### Trustee 
+First and foremost actors of our network are trustees. Domain ledger transactions start with trustee. In domain ledger, a trustee can add new stewards too. Both trustee and stewards have power to write on domain ledger. We have one trustee with seed value “T0003000u0I000D000F000g0Trustee1” by using the command: 
+
 `python3 get_did_and_verkey.py --seed T0003000u0I000D000F000g0Trustee1`
 
 ### Stewards 1, 2, and 3
+Stewards have power to write on both domain ledger and pool ledger. A steward can add a new node by using pool ledger transactions. A steward can add only one node and so each steward can add its only node into networks. We use three stewards with seed values by using the following command:
+
 `python3 get_did_and_verkey.py --seed 100A000000300000c0000000Steward1`
 
 `python3 get_did_and_verkey.py --seed 300600b0D030000000z00000Steward2`
