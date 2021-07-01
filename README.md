@@ -18,8 +18,9 @@ Run the bash script to download required components and libraries, and set up th
 ## Generating public info using private/secret seed value
 To formlized the pool, we needs four nodes, which consists of one trustee node and three stewards in Indy network. 
 
-    - Trustee: An Identity Owner entrusted with specific identity control responsibilities by another Identity Owneror with specific governance responsibilities by a Governance Framework. 
-    - Steward: An Organization approved by the Sovrin Foundation to operate a Node. 
+- Trustee: An Identity Owner entrusted with specific identity control responsibilities by another Identity Owneror with specific governance responsibilities by a Governance Framework. 
+- Steward: An Organization approved by the Sovrin Foundation to operate a Node. 
+
 
 Both trustee and steward can be validator nodes. 
 
@@ -42,6 +43,8 @@ Stewards have power to write on both domain ledger and pool ledger. A steward ca
 `python3 get_did_and_verkey.py --seed v000K00l0000S000000e0000Steward3`
 
 ### Nodes:
+Every node is a network component which holds ledgers. Users need to initialize each node by calling “init_indy_node.py” with the node name and node’s seed value. We set up three nodes by using seed with value through the following command: 
+
 `sudo python3 init_indy_node.py --name Node1 --seed 4000F000u00000D0000000g0000Node1`
 
 `sudo python3 init_indy_node.py --name Node2 --seed T00000000u0000I0000v0003000Node2`
@@ -49,9 +52,13 @@ Stewards have power to write on both domain ledger and pool ledger. A steward ca
 `sudo python3 init_indy_node.py --name Node3 --seed 300000A00u000z0000600003000Node3`
 
 ## Single Host Network Development:
+To run the network on a single host, we can use the following command to clear whatever we have done in the previous steps and initialize nodes and generate ledger:
+
 `sudo python3 clear_setup.py --full True --network sandbox`
 
 `sudo bash single_host_generation.sh`
+
+We use the following command to start each nodes. 
 
 For Node 1:
 `sudo python3 start_indy_node.py Node1 0.0.0.0 9701 0.0.0.0 9702`
@@ -70,6 +77,8 @@ To restart the stopped node:
 
 
 ## Multi Hosts Network Development
+To host the network on multiple hosts, we have to follow the each command in this section. To use your own IP, then you have to edit the “- -ips” flag of multi_host_host1_generation.sh, multi_host_host2_generation.sh, multi_host_host3_generation.sh files. Actually for each node, you have to write that node’s generation file so that no one will be able to know that node’s seed value. 
+
 ### Host 1
 `sudo python3 clear_setup.py --full True --network sandbox`
 
@@ -78,6 +87,7 @@ To restart the stopped node:
 `sudo python3 start_indy_node.py Node1 0.0.0.0 9701 0.0.0.0 9702`
 
 To check node information and to restart stopped node
+
 `sudo python3 validator_info.py`
 
 `sudo bash restart_indy_node.sh`
@@ -90,6 +100,7 @@ To check node information and to restart stopped node
 `sudo python3 start_indy_node.py Node2 0.0.0.0 9703 0.0.0.0 9704`
 
 To check node information and to restart stopped node
+
 `sudo python3 validator_info.py`
 
 `sudo bash restart_indy_node.sh`
@@ -103,9 +114,12 @@ To check node information and to restart stopped node
 `sudo python3 start_indy_node.py Node3 0.0.0.0 9705 0.0.0.0 9706`
 
 To check node information and to restart stopped node
+
 `sudo python3 validator_info.py`
 `sudo bash restart_indy_node.sh`
 
 
 ## Testing with SDK Applications
+Once the network has been set up, we can use the following command to run a test sample. 
+
 `python3 -m src.sdk_sample`
