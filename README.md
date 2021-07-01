@@ -16,6 +16,13 @@ Run the bash script to download required components and libraries, and set up th
 `sudo bash prerequisites.sh`
 
 ## Generating public info using private/secret seed value
+To formlized the pool, we needs four nodes, which consists of one trustee node and three stewards in Indy network. 
+
+    - Trustee: An Identity Owner entrusted with specific identity control responsibilities by another Identity Owneror with specific governance responsibilities by a Governance Framework. 
+    - Steward: An Organization approved by the Sovrin Foundation to operate a Node. 
+
+Bother trustee and steward can be validator nodes. 
+
 ### Trustee 
 `python3 get_did_and_verkey.py --seed T0003000u0I000D000F000g0Trustee1`
 
