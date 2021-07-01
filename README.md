@@ -3,8 +3,8 @@ Please follow the following the hands on tutorial for deploying the project:
 
 
 ## Prerequisites
-OS: Ubuntu 16.04 LTS, also know as Ubuntu Xential.
-Git
+ - OS: Ubuntu 16.04 LTS, also know as Ubuntu Xential.
+ - Git: Any version later than 2.7.
 
 ## Presetup  
 Please clone our project by using the following command: 
