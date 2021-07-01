@@ -8,9 +8,11 @@ Please follow the following the hands on tutorial for deploying the project:
 
 ## Presetup  
 Please clone our project by using the following command: 
+
 `git clone https://github.com/wYaobiz/Hyperledger-Indy-Tutorial`
 
 Run the bash script to download required components and libraries, and set up the environment.
+
 `sudo bash prerequisites.sh`
 
 ## Generating public info using private/secret seed value
