@@ -1,12 +1,16 @@
 # Hyperledger-Indy-Tutorial
-Please follow the following tutorial for running the project:
-
-https://medium.com/@taseen.junaid/hyperledger-indy-custom-network-with-indy-node-plenum-protocol-ledger-85fd10eb5bf5
+Please follow the following the hands on tutorial for deploying the project:
 
 
-## Presetup 
+## Prerequisites
+OS: Ubuntu 16.04 LTS, also know as Ubuntu Xential.
+Git
+
+## Presetup  
+Please clone our project by using the following command: 
 `git clone https://github.com/wYaobiz/Hyperledger-Indy-Tutorial`
 
+Run the bash script to download required components and libraries, and set up the environment.
 `sudo bash prerequisites.sh`
 
 ## Generating public info using private/secret seed value
